@@ -5,3 +5,5 @@ function rows() {
         console.log(buttons[i].innerText);	
     }
 }
+
+rows();
