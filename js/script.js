@@ -1,11 +1,8 @@
-var countElements = document.getElementsByClassName('button');
+var buttons = document.getElementsByClassName('button');
 
-console.log(countElements);
-
-function numberOfElements(n) {
-    var n = countElements.length;
-    for ( var i = 1 ; i <= n; i++) {
-         var x = document.getElementsByClassName('button').innerText;
-        }
-        console.log(x);
+function rows() {
+    for (i = 0 ; i < buttons.length ; i++) {
+        console.log(buttons[i].innerText);	
     }
+}
+
