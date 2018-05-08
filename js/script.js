@@ -1,11 +1,13 @@
-var countElements = document.getElementsByClassName('button');
+function checkOnclickEvent(param) {
+  console.log(param);
+}
+var inputElem = document.getElementById('js-inputValue'),
+    imageElem = document.getElementById('js-image');
 
-console.log(countElements);
+imageElem.addEventListener('click', function(e) {
+  checkOnclickEvent('image was clicked')
+});
 
-function numberOfElements(n) {
-    var n = countElements.length;
-    for ( var i = 1 ; i <= n; i++) {
-         var x = document.getElementsByClassName('button').innerText;
-        }
-        console.log(x);
-    }
+inputElem.addEventListener('keypress', function(e) {
+  e.target.value += ' test ';
+});
