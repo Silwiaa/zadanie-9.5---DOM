@@ -1,13 +1,7 @@
-function checkOnclickEvent(param) {
-  console.log(param);
+var buttons = document.getElementsByClassName('button');
+
+function rows() {
+    for (i = 0 ; i < buttons.length ; i++) {
+        console.log(buttons[i].innerText);	
+    }
 }
-var inputElem = document.getElementById('js-inputValue'),
-    imageElem = document.getElementById('js-image');
-
-imageElem.addEventListener('click', function(e) {
-  checkOnclickEvent('image was clicked')
-});
-
-inputElem.addEventListener('keypress', function(e) {
-  e.target.value += ' test ';
-});
